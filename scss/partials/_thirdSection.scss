@@ -1,0 +1,72 @@
+@mixin largeUnderline {
+  height: 7px;
+  width: 300px;
+  background-color: #28C5B0;
+}
+
+.sectionThree {
+  width: 100%;
+  background-color: #F1F1F1;
+
+}
+
+.sectionThreeContainer {
+  width: 1064px;
+  margin: 0 auto;
+  .title {
+    padding: 45px 0;
+    margin-bottom: 30px;
+    span {
+      font-size: 22px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+  }
+  .largeUnderline {
+    @include largeUnderline;
+  }
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  width: 1064px;
+  margin: 0 auto;
+  .box {
+    border: 1px solid #D6D6D6;
+    width: 30%;
+    height: 400px;
+    position: relative;
+    span {
+      padding: 30px 0;
+      font-size: 23px;
+      display: block;
+      text-align: center;
+    }
+    .circle {
+      width: 120px;
+      height: 120px;
+      background-color: #F9F9F9;
+      border-radius: 50%;
+      position: absolute;
+      left: calc(50% - 60px);
+      margin-bottom: 20px;
+      .price {
+        position: absolute;
+        left: calc(50% - 30px);
+        top: 40px;
+        span:nth-child(1) {
+          display: inline;
+          font-size: 30px;
+
+        }
+        span:nth-child(2) {
+          display: inline;
+          vertical-align: super;
+          font-size: 10px;
+
+        }
+      }
+    }
+  }
+}

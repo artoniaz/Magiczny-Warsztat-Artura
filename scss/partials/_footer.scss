@@ -1,0 +1,55 @@
+footer {
+  width: 1064px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: #B4B4B4;
+    span {
+      font-weight: bold;
+    }
+  }
+  .footerEnd {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font-size: 20px;
+    }
+    .footerImgs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      #img1 {
+        background-image: url("../images/flickr.png");
+        background-size: cover;
+        background-position: center;
+        height: 35px;
+        width: 35px;
+      }
+      #img2 {
+        background-image: url("../images/vimeo.png");
+        background-size: cover;
+        background-position: center;
+        height: 35px;
+        width: 35px;
+      }
+      #img3 {
+        background-image: url("../images/pinterest.png");
+        background-size: cover;
+        background-position: center;
+        height: 35px;
+        width: 35px;
+      }
+      #img4 {
+        background-image: url("../images/twitter.png");
+        background-size: cover;
+        background-position: center;
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}

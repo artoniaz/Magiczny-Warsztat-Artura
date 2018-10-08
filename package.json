@@ -1,0 +1,25 @@
+{
+  "name": "gulp-artur",
+  "version": "1.0.0",
+  "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodersLab/WAR_FER_S_41_RWD_SASS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodersLab/WAR_FER_S_41_RWD_SASS/issues"
+  },
+  "homepage": "https://github.com/CodersLab/WAR_FER_S_41_RWD_SASS#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
