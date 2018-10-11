@@ -48,7 +48,7 @@
       height: 120px;
       background-color: #F9F9F9;
       border-radius: 50%;
-      position: absolute;
+      position: relative;
       left: calc(50% - 60px);
       margin-bottom: 20px;
       .price {
@@ -67,6 +67,16 @@
 
         }
       }
+    }
+    .planBox{
+      height: 50px;
+      width: 100%;
+      background-color: gray;
+      text-align: center;
+      padding-top: 18px;
+    }
+    .planBox:nth-child(4){
+      background-color: lightgrey;
     }
   }
 }

@@ -40,8 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var lis2 = document.querySelectorAll(".drop_down_list:nth-child(2) li");
     for (let el of lis2) {
         let color = document.querySelector(".summary_panel .color");
+        let price = document.querySelector(".value:nth-child(2)");
         el.addEventListener("click", function () {
-            color.innerHTML = el.innerHTML
+            color.innerHTML = el.innerHTML;
+            let realColor = chairColor[el.innerHTML];
+            price.innerHTML = realColor;
         })
     }
 
@@ -55,8 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var lis3 = document.querySelectorAll(".drop_down_list:nth-child(3) li");
     for (let el of lis3) {
         let pattern = document.querySelector(".summary_panel .pattern");
+        let price = document.querySelector(".value:nth-child(3)");
         el.addEventListener("click", function () {
-            pattern.innerHTML = el.innerHTML
+            pattern.innerHTML = el.innerHTML;
+            let realPattern = chairPattern[el.innerHTML];
+            price.innerHTML = realPattern;
         })
     }
 
@@ -71,8 +77,27 @@ document.addEventListener("DOMContentLoaded", function () {
         "Clair": 100,
         "Margarita": 200,
         "Selena": 1000
-    }
+    };
 
+    var chairColor = {
+        "Czerwony" : 500,
+        "Czarny" : 700,
+        "Pomarańczowy" : 2000,
+    };
 
+    var chairPattern = {
+        "Tkanina" : 12,
+        "Skóra" : 5000,
+    };
+//transport
+    // var input = document.querySelector(".checkbox input");
+    // if (input.checked){
+    //     var label = document.querySelector(".checkbox label");
+    //     var transport = document.querySelector(".panel_left .transport");
+    //     transport.innerHTML = label.innerHTML;
+    // } else {
+    //     transport.innerHTML = "";
+    // };
+    
 });
 

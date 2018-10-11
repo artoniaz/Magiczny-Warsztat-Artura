@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-var firstButton = document.querySelector("#firstButton");
-var navList = document.querySelector(".navigationList");
+    var firstButton = document.querySelector("#firstButton");
+    var navList = document.querySelector(".navigationList");
 
     firstButton.addEventListener("mouseover", function(){
-    navList.style.display = "block";
-});
+        navList.style.display = "block";
+    });
 
     navList.addEventListener("mouseleave", function () {
        navList.style.display = "none";
     });
 
-var galleryImg1 = document.querySelector("#imgGallery1");
-var galleryImg2 = document.querySelector("#imgGallery2");
+    var galleryImg1 = document.querySelector("#imgGallery1");
+    var galleryImg2 = document.querySelector("#imgGallery2");
 
-var panel1 = document.querySelector("#panel1");
-var panel2 = document.querySelector("#panel2");
+    var panel1 = document.querySelector("#panel1");
+    var panel2 = document.querySelector("#panel2");
 
     galleryImg1.addEventListener("mouseover", function () {
         panel1.style.display = "none";
@@ -33,5 +33,6 @@ var panel2 = document.querySelector("#panel2");
         panel2.style.display = "block";
     });
 
+    var slider = new Slider(".slider", 3000);
 
 });

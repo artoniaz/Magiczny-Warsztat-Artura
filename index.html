@@ -31,10 +31,25 @@
 <!-- sekcja pierwsza, krzesło i tekst -->
 <section>
     <div class="gradient">
-        <div class="sectionOneContainer">
-            <div class="emptyElement"></div>
-            <div class="chairImage">
+        <div class="sectionOneContainer slider">
+            <div class="emptyElement">
+                <button class="slider-prev">
+                    <i class="fas fa-angle-left"></i>
+                </button>
             </div>
+
+            <div class="slider-slides">
+                <div class="slider-slide slider-slide-active">
+                    <div class="chairImage black"></div>
+                </div>
+                <div class="slider-slide">
+                    <div class="chairImage red"></div>
+                </div>
+                <div class="slider-slide">
+                    <div class="chairImage orange"></div>
+                </div>
+            </div>
+
 
             <div class="chairText">
                 <h1>SIT <span> ON </span> OUR <span> CHAIR</span></h1>
@@ -44,7 +59,11 @@
                     hodor hodor...</p>
                 <button class="textButton">ZOBACZ WIĘCEJ</button>
             </div>
-            <div class="emptyElement"></div>
+            <div class="emptyElement">
+                <button class="slider-next">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
 
         </div>
     </div>
@@ -96,6 +115,8 @@
                         <span><span>85</span><span>99</span></span>
                     </div>
                 </div>
+                <div class="planBox">Zakup towaru + dowóz</div>
+                <div class="planBox">Serwis</div>
             </div>
             <div class="box" id="standard">
                 <span>STANDARD PLAN</span>
@@ -158,5 +179,6 @@
 </footer>
 
 <script src="JavaScript/app.js"></script>
+<script src="JavaScript/slajder.js"></script>
 
 </body>
